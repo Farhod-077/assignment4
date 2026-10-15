@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Contact</a>
+        <a href="validation.html">HTML5 Validation</a>
+        <a href="bootstrap-form.html">Bootstrap Form</a>
+        <a href="bootstrap-validation.html">Bootstrap Validation</a>
+        <a href="registration.html">Registration</a>
+    </nav>
+
+    <main>
+        <h1>Contact Form with HTML5 Validation</h1>
+        <p>All fields are required.</p>
+
+        <form method="get">
+            <div>
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    minlength="2"
+                    maxlength="50"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    maxlength="100"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="message">Message:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    minlength="10"
+                    maxlength="500"
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+</body>
+</html>

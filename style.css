@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #212529;
+}
+
+
+nav:not(.navbar) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 18px;
+    background-color: #212529;
+}
+
+nav:not(.navbar) a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+main:not(.container) {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+main:not(.container) h1 {
+    margin-top: 0;
+}
+
+main:not(.container) form > div {
+    margin-bottom: 18px;
+}
+
+main:not(.container) label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+main:not(.container) input,
+main:not(.container) textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font: inherit;
+    border: 1px solid #adb5bd;
+    border-radius: 6px;
+}
+
+main:not(.container) input:focus,
+main:not(.container) textarea:focus {
+    outline: 2px solid #0d6efd;
+    outline-offset: 2px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+main:not(.container) button {
+    padding: 10px 20px;
+    font: inherit;
+    color: white;
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+main:not(.container) button:hover {
+    background-color: #0b5ed7;
+}
+
+
+main.container {
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+@media (max-width: 767px) {
+    main:not(.container) {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    nav:not(.navbar) {
+        gap: 12px;
+    }
+}
